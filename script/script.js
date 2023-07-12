@@ -3,7 +3,7 @@ function verificarPessoa(){
     var container_ano = new Date()
     var ano_atual = container_ano.getFullYear()
     var input_ano = document.getElementById('input_ano_nascimento')
-    var exibir = document.getElementById('p')
+    var exibir = document.getElementById('paragrafo')
     var imagem = document.getElementById('imagem')
     var genero = document.getElementsByName('sexo')
     var sexo = ''
