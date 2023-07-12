@@ -23,10 +23,6 @@ header{
     
 }
 
-#paragrafo{
-    text-align: center;
-}
-
 
 #container{
     background-color: white;
@@ -48,6 +44,18 @@ header{
     -webkit-appearance: none;
 }
 
+#botao{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.329); 
+    width: 100%;
+    font-size: 17px;   
+ }
+
+#paragrafo{
+    text-align: center;
+}
+
 #imagem{
     display: none;
     border-radius: 50%;
@@ -56,15 +64,6 @@ header{
     margin: auto;
     padding-bottom: 10px;
 }
-
-
-#botao{
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.329); 
-    width: 100%;
-    font-size: 17px;   
- }
 
 
 @media screen and (max-width: 700px){

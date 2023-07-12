@@ -19,6 +19,8 @@ function verificarPessoa(){
 
     } else if(input_ano.value > ano_atual || input_ano.value < 1923 ||  input_ano.value == ano_atual){
             window.alert(`[Erro] ${input_ano.value} não é um ano válido`)
+            exibir.innerHTML = 'Preencha os dados acima <br> para ver o resultado.'
+            imagem.style.display = 'none'
         }
     
         else if(genero[0].checked && idade <= 5){
