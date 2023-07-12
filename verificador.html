@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  
+ <div id="corpo">
+    
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section id="container">
+       
+        <label for="idade">Ano de Nascimento</label>
+        
+        <input type="number" name="ano" id="input_ano_nascimento" placeholder="ex.: 1945, 2015, 1980">
+
+        <p>
+            Sexo:
+            <input type="radio" name="sexo" id="mas" checked>
+            <label for="mas">Masculino</label>
+
+            <input type="radio" name="sexo" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p id="botao">
+            <input type="button" value="Verificar" onclick="verificarPessoa()">
+        </p>
+
+        <p id="p">
+            Preencha os dados acima para ver o resultado.
+        </p>
+
+        <div id="foto">
+            <img src="" alt="" id="imagem">
+        </div>
+
+    </section>
+</div> 
+
+</body>
+</html>
