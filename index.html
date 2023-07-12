@@ -18,7 +18,7 @@
 
     <section id="container">
        
-        <label for="idade">Ano de Nascimento</label>
+        <label for="idade">Ano de Nascimento:</label>
         
         <input type="number" name="ano" id="input_ano_nascimento" placeholder="ex.: 1945, 2015, 1980">
 
@@ -30,15 +30,17 @@
             <input type="radio" name="sexo" id="fem">
             <label for="fem">Feminino</label>
         </p>
-        <p id="botao">
-            <input type="button" value="Verificar" onclick="verificarPessoa()">
+       
+        <p id="container_botao">
+           <button onclick="verificarPessoa()" onmouseover="mudarCor()" onmouseout="voltarCor()" id="botao">Verificar</button> 
+            
         </p>
 
         <p id="p">
-            Preencha os dados acima para ver o resultado.
+            Preencha os dados acima <br> para ver o resultado.
         </p>
 
-        <div id="foto">
+        <div>
             <img src="" alt="" id="imagem">
         </div>
 

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(72, 115, 231);
+    background-color: #4873e7;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,10 +26,17 @@ header{
 #container{
     background-color: white;
     width: 400px;
-    padding: 15px;
+    padding: 20px;
     padding-top: 35px;
     padding-bottom: 1px;
     border-radius: 10px;
+}
+
+#input_ano_nascimento{
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+
 }
 
 #imagem{
@@ -41,11 +48,30 @@ header{
     padding-bottom: 10px;
 }
 
-#botao{
+#p{
     text-align: center;
 }
 
-#p{
-    text-align: center;
+#botao{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.329); 
+    width: 100%;
+    font-size: 17px;   
+ }
+
+@media screen and (max-width: 700px){
+    #container{
+        width: 360px;
+        
+    }
+  
+
+    #container_botao{
+      text-align: center;
+     
+    }
+
+
 }
 

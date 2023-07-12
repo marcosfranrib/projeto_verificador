@@ -8,13 +8,13 @@ function verificarPessoa(){
     var genero = document.getElementsByName('sexo')
     var sexo = ''
     var idade = ano_atual - Number(input_ano.value)
+    
 
     if(input_ano.value.length == 0 || input_ano.value > ano_atual || input_ano.value < 1923 || input_ano.value == ano_atual){
        
         window.alert('Erro, verifique a data inserida')
         exibir.innerHTML = 'Preencha os dados acima para ver o resultado.'
         imagem.style.display = 'none'
-        
         
 
     } else if(genero[0].checked && idade <= 5){
@@ -56,6 +56,7 @@ function verificarPessoa(){
             imagem.src = 'imagens/cg.png'
             imagem.style.display = 'block'
             exibir.innerHTML = `é um menina de ${idade} anos`
+            
         }
 
         else if( genero[1].checked && idade >= 18 && idade < 60){
@@ -72,6 +73,21 @@ function verificarPessoa(){
 
         input_ano.value = '';
 
+    }
+
+    function mudarCor(){
+
+        var botao = document.getElementById('botao')
+        botao.style.background = '#3b5bb3'
+        botao.style.color = 'white'
+       
+    }
+
+    function voltarCor(){
+        var botao = document.getElementById('botao')
+        botao.style.background = '#F0F0F0'
+        botao.style.color = 'black'
+        
     }
 
    
