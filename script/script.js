@@ -23,25 +23,31 @@ function verificarPessoa(){
             imagem.style.display = 'none'
         }
     
-        else if(genero[0].checked && idade <= 5){
+        else if(genero[0].checked && idade <= 4){
             imagem.src = 'imagens/bmo.png'
             imagem.style.display = 'block'
 
-            if(idade < 2){
-                exibir.innerHTML = `é um bêbê menino de ${idade} ano`
+            if(idade == 1){
+                exibir.innerHTML = `é um bêbê de ${idade} ano`
             }else{
-                exibir.innerHTML = `é um bêbê menino de ${idade} anos`
+                exibir.innerHTML = `é um bêbê de ${idade} anos`
             }
             
         }
     
-        else if(genero[0].checked && idade <= 10){
+        else if(genero[0].checked && idade >= 5 && idade <= 11){
             imagem.src = 'imagens/cm.png'
             imagem.style.display = 'block'
             exibir.innerHTML = `é um menino de ${idade} anos`
         
         }
 
+        else if(genero[0].checked && idade >= 12 && idade <= 17){
+            imagem.src = 'imagens/adh.png'
+            imagem.style.display = 'block'
+            exibir.innerHTML = `é um rapaz de ${idade} anos`
+        
+        }
 
         else if(genero[0].checked && idade >= 18 && idade < 60){
             imagem.src = 'imagens/ah.png'
@@ -55,17 +61,29 @@ function verificarPessoa(){
             exibir.innerHTML = `é um homem idoso de ${idade} anos`
         }
 
-        else if(genero[1].checked && idade <= 5){
+        else if(genero[1].checked && idade <= 4){
             imagem.src = 'imagens/bma.png'
             imagem.style.display = 'block'
-            exibir.innerHTML = `é um menina de ${idade} anos`
+           
+            if(idade == 1){
+                exibir.innerHTML = `é uma bêbê de ${idade} ano`
+            }else{
+                exibir.innerHTML = `é uma bêbê de ${idade} anos`
+            }
         }
 
-        else if(genero[1].checked && idade <= 10){
+        else if(genero[1].checked && idade >= 5 && idade <= 11){
             imagem.src = 'imagens/cg.png'
             imagem.style.display = 'block'
             exibir.innerHTML = `é um menina de ${idade} anos`
             
+        }
+
+        else if(genero[1].checked && idade >= 12 && idade <= 17){
+            imagem.src = 'imagens/adm.png'
+            imagem.style.display = 'block'
+            exibir.innerHTML = `é uma moça de ${idade} anos`
+        
         }
 
         else if(genero[1].checked && idade >= 18 && idade < 60){
