@@ -43,13 +43,13 @@ function verificarPessoa(){
         }
 
 
-        else if( genero[0].checked && idade >= 18 && idade < 60){
+        else if(genero[0].checked && idade >= 18 && idade < 60){
             imagem.src = 'imagens/ah.png'
             imagem.style.display = 'block'
             exibir.innerHTML = `é um homem de ${idade} anos`          
         }
 
-        else if( genero[0].checked && idade >= 60){
+        else if(genero[0].checked && idade >= 60){
             imagem.src = 'imagens/ih.png'
             imagem.style.display = 'block'
             exibir.innerHTML = `é um homem idoso de ${idade} anos`
@@ -68,13 +68,13 @@ function verificarPessoa(){
             
         }
 
-        else if( genero[1].checked && idade >= 18 && idade < 60){
+        else if(genero[1].checked && idade >= 18 && idade < 60){
             imagem.src = 'imagens/am.png'
             imagem.style.display = 'block'
             exibir.innerHTML = `é uma mulher de ${idade} anos`
         }
 
-        else if( genero[1].checked && idade >= 60){
+        else if(genero[1].checked && idade >= 60){
             imagem.src = 'imagens/im.png'
             imagem.style.display = 'block'
             exibir.innerHTML = `é um mulher idosa de ${idade} anos`
